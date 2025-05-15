@@ -143,31 +143,25 @@ nav a:hover {
 }
 
 .theme-button{
-  background: rgb(225, 89, 0);
+  display: flex;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 99;
   border: none;
+  outline: none;
+  color: #000000;
+  cursor: pointer;
   padding: 8px 16px;
   font-size: 14px;
-  cursor: pointer;
-  color: #000000;
+  background-color: rgb(255,89,0);
+  border: none;
 }
 
 .theme-button:hover{
   background: rgb(254, 105, 6);
   outline: 1px solid rgb(225, 89, 0);
   outline-offset: 1px;
-}
-.theme-toggle-container {
-  position: fixed;
-  top: 80px;
-  left: 8%;
-  
-  z-index:999;
-  transition: top 0.3s ease-in-out;
-  
-}
-.theme-toggle-container:hover {
-  left: 8%;
-  pointer-events: auto;
 }
 
 section {
@@ -278,7 +272,6 @@ form textarea {
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid rgb(225, 89, 0);
-  
   font-size: 16px;
 }
 
@@ -292,7 +285,7 @@ form button {
 }
 
 form button:hover {
-  background: rgb(239, 96, 0);
+  background: rgb(254, 105, 6);
   outline: solid 1px rgb(225, 89, 0);
   outline-offset: 1px;
 }
@@ -342,18 +335,18 @@ section p {
   bottom: 20px;
   right: 0;
   z-index: 99;
-  font-size: 18px;
   border: none;
   outline: none;
   color: #000000;
   cursor: pointer;
-  padding: 15px;
+  padding: 8px 16px;
+  font-size: 14px;
   background-color: rgb(255,89,0);
   border: none;
 }
 
 .back_to_top_btn:hover {
-  background-color: rgb(255, 121, 31);
+  background-color: rgb(254, 105, 6);
   outline: solid 1px rgb(225, 89, 0);
   outline-offset: 1px;
 }
@@ -377,20 +370,20 @@ section p {
 .modalTriggerBtn {
   display: flex;
   position: fixed;
-  font-size: 18px;
   border: none;
   outline: none;
   bottom: 20px;
   left: 0;
   color: #000000;
   cursor: pointer;
-  padding: 15px;
+  padding: 8px 16px;
+  font-size: 14px;
   background-color: rgb(225, 89, 0);
   z-index: 99;
 }
 
 .modalTriggerBtn:hover {
-  background-color: rgb(255, 121, 31);
+  background-color: rgb(254, 105, 6);
   outline: solid 1px rgb(225, 89, 0);
   outline-offset: 1px;
 }
