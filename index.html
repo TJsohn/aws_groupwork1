@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="icon" href="/images/logo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="#home"
+            ><img loading="lazy" src="images/logo.png" alt="Logo"
+          /></a>
+        </div>
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <div class="fa fa-bars">☰</div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="#contact">Contact</a>
+          </ul>
+        </nav>
+      </div>
+      <div class="theme-toggle-container">
+        <button id="darkModeToggle" class="theme-button">THEME</button>
+      </div>
+    </header>
+
+    <section id="home">
+      <h1>Welcome to My Portfolio</h1>
+      <div class="profile-container">
+        <img
+          src="/images/profile_picture.webp"
+          alt="Binyam Angamo. Profile picture"
+          class="profile-image"
+        />
+        <p class="short-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam,
+          reprehenderit recusandae iure delectus consequuntur rem cum corrupti
+          soluta dolor totam ea similique. Maxime culpa incidunt voluptatum ea
+          numquam eligendi enim!.
+        </p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about">
+        <p class="about-contents">Architect</p>
+        <p class="about-contents">Vector designer</p>
+        <p class="about-contents">Photographer</p>
+        <p class="about-contents">Entrepreneur</p>
+        <p class="about-contents">Full stack web developer</p>
+        <p class="about-contents">Self claimed cook</p>
+        <button class="modalTriggerBtn">Learn more</button>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="carousel">
+        <div class="carousel-track">
+          <img loading="lazy" src="images/zelephant.webp" alt="Zelephant" />
+          <img loading="lazy" src="images/stand_out.webp" alt="Stand out" />
+          <img loading="lazy" src="images/bunna.webp" alt="Bunna" />
+          <img loading="lazy" src="images/genna.webp" alt="Genna" />
+          <img loading="lazy" src="images/emblem_lion.webp" alt="Emblem lion" />
+          <img loading="lazy" src="images/gridLion.webp" alt="Grid lion" />
+          <img loading="lazy" src="images/hotel.webp" alt="Hotel" />
+          <img
+            loading="lazy"
+            src="images/residence_3d.webp"
+            alt="Residence 3s"
+          />
+          <img
+            loading="lazy"
+            src="images/residence_ground_floor.webp"
+            alt="Residence ground floor"
+          />
+          <img
+            loading="lazy"
+            src="images/residence_site_plan.webp"
+            alt="Residence first floor"
+          />
+
+          <img loading="lazy" src="images/zelephant.webp" alt="Zelephant" />
+          <img loading="lazy" src="images/stand_out.webp" alt="Stand out" />
+          <img loading="lazy" src="images/bunna.webp" alt="Bunna" />
+          <img loading="lazy" src="images/genna.webp" alt="Genna" />
+          <img loading="lazy" src="images/emblem_lion.webp" alt="Emblem lion" />
+          <img loading="lazy" src="images/gridLion.webp" alt="Grid lion" />
+          <img loading="lazy" src="images/hotel.webp" alt="Hotel" />
+          <img
+            loading="lazy"
+            src="images/residence_3d.webp"
+            alt="Residence 3s"
+          />
+          <img
+            loading="lazy"
+            src="images/residence_ground_floor.webp"
+            alt="Residence ground floor"
+          />
+          <img
+            loading="lazy"
+            src="images/residence_site_plan.webp"
+            alt="Residence first floor"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <p style="background: #d0693a">HTML, CSS, JavaScript</p>
+        <br />
+        <p style="background: #f49e4c">AutoCAD, ArchiCAD, SketchUP!</p>
+        <br />
+        <p style="background: #f5ee9e">Illustrator, Affinity Designer, Figma</p>
+        <br />
+        <p style="background: #3b8ea5">
+          Amharic(mother tongue), English, Finnish, Tigrigna
+        </p>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out by filling in the form below:</p>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <button class="back_to_top_btn" id="topBtn" title="Go to top">
+      Back to top
+    </button>
+    <div class="modalWindow hidden">
+      <button class="closeModal">x</button>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, quas
+        iusto. Quis quidem velit vel aut facilis, eligendi distinctio reiciendis
+        cum dicta maiores porro nemo harum, non quaerat quo dolores.
+      </p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
