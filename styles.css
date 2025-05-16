@@ -290,9 +290,14 @@ form button:hover {
   outline-offset: 1px;
 }
 
-section h1,
+section h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
 section h2 {
   margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 section p {
@@ -438,6 +443,93 @@ section p {
   transform: scale(2.5);
 }
 
+@media screen and (max-width: 950px) {
+  .nav-links a {
+    display: none;
+  }
+  .nav-links .fa-bars {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .nav-links.active {
+    position: relative;
+  }
+  .nav-links.active a.fa-bars {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-links.active a {
+    float: none;
+    display: block;
+    text-align: left;
+   
+  }
+  .nav-links.active a:hover {
+    background: #dbdbdb;
+  }
+}
+
+@media screen and (max-width: 950px) {
+ 
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+  }
+  .nav-links {
+    flex-direction: column;
+  }
+  .profile-container {
+    
+    align-items: center;
+    padding: 20px;
+  }
+  .profile-image {
+    width: 50%;
+    max-width: 170px;
+    height: auto;
+  }
+  .short-description {
+    text-align: center;
+    margin-top: 10px;
+    width: 80%;
+    max-width: 380px;
+    height: auto;
+  }
+  .about {
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .about-contents {
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: center;
+  }
+  .carousel-track {
+    flex-wrap: nowrap;
+  }
+  form input,
+  form textarea, form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .modalWindow {
+    width: 90%;
+    max-width: 400px;
+    top: 10%;
+    left: 5%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .nav-links a {
     display: none;
@@ -480,29 +572,31 @@ section p {
     flex-direction: column;
   }
   .profile-container {
-    
+    display: flex;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 50px;
   }
   .profile-image {
-    width: 50%;
-    max-width: 250px;
+    width: 80%;
+    max-width: 150px;
     height: auto;
   }
   .short-description {
     text-align: center;
-    margin-top: 10px;
-    width: 70%;
+    width: 80%;
     max-width: 300px;
     height: auto;
+    
   }
   .about {
     display: flex;
-    padding: 2px;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: auto;
+    height:f auto;
+    
   }
   .about-contents {
     font-size: 16px;
@@ -582,7 +676,7 @@ section p {
   .short-description {
     padding: 0 10px;
     width: 80%;
-    max-width: 150px;
+    max-width: auto;
     height: auto;
   }
   .about {
